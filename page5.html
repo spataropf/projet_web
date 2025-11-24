@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - La bourse pour les nuls</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">La bourse pour les nuls</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="page2.html">Stratégies d'investissement</a>
+                <a href="page3.html">Produits spéculatifs</a>
+                <a href="page4.html">Facteurs économiques</a>
+                <a href="page5.html" class="active">Inscription</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="general">
+            <h1>Inscription</h1>
+            <p class="lead">Remplissez ce formulaire pour créer votre compte et accéder aux contenus exclusifs du site.
+            </p>
+        </section>
+
+        <section>
+            <form class="signup-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date de naissance</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Niveau d’expérience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="debutant">Débutant</option>
+                        <option value="amateur">Amateur</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="button">S’inscrire</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 La bourse pour les nuls.</p>
+    </footer>
+</body>
+
+</html>
